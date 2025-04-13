@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Her Out</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+
+      .outer-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 20px;
+      }
+      .video {
+        position: absolute;
+        padding-right: 300px;
+        height: 400px;
+        width: 400%;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 3rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+      .content {
+        flex: 0 1 800px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .tenor-gif-embed {
+        margin: 0 auto;
+        max-width: 500px;
+      }
+      h1 {
+        margin: 2rem auto;
+        line-height: 1.5;
+        max-width: 800px;
+      }
+      p {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      }
+      video {
+        width: 40%;
+        height: auto;
+      }
+      .audio-player {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+      }
+      /* Updated video grid styles */
+      .videos-grid {
+        width: 100%;
+        max-width: 1200px;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+        gap: 1.5rem;
+        padding: 1rem;
+      }
+
+      .video-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+        height: 450px; /* Fixed height */
+        background: #000;
+      }
+
+      .video-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .video-card video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Changed to contain */
+        background: #000;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .videos-grid {
+          grid-template-columns: 1fr; /* Single column on mobile */
+          gap: 1rem;
+        }
+        
+        .video-card {
+          height: 350px;
+        }
+      }
+
+      /* Add new title styles */
+      .memories-title {
+        width: 100%;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #ff69b4;
+        margin: 3rem 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        animation: glow 2s ease-in-out infinite;
+      }
+
+      @keyframes glow {
+        0%, 100% { text-shadow: 0 0 5px rgba(255,105,180,0.3); }
+        50% { text-shadow: 0 0 20px rgba(255,105,180,0.7); }
+      }
+
+      .message-text {
+        text-align: justify;
+        text-justify: inter-word;
+        margin: 2rem auto;
+        line-height: 1.8;
+        max-width: 800px;
+        padding: 0 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <audio class="audio-player" controls autoplay loop>
+      <source src="ilove.mp4" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Add title before video grid -->
+    <h1 class="memories-title">MEMORIES</h1>
+
+    <!-- Updated Video Grid -->
+    <div class="videos-grid">
+      <div class="video-card">
+        <video autoplay loop muted playsinline>
+          <source src="ilove.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video autoplay loop muted playsinline>
+          <source src="ilove3.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video autoplay loop muted playsinline>
+          <source src="ilove2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video autoplay loop muted playsinline>
+          <source src="ilove4.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video autoplay loop muted playsinline>
+          <source src="ilove5.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video autoplay loop muted playsinline>
+          <source src="soon.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="outer-container">
+      <div class="container">
+        <div class="content">
+          <div class="tenor-gif-embed" data-postid="7561922659784932011" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/wrapped-gifts-birthday-presents-blossom-flowers-hibiscus-gif-7561922659784932011">Wrapped Gifts Birthday Presents Sticker</a>from <a href="https://tenor.com/search/wrapped+gifts-stickers">Wrapped Gifts Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+          <h1 class="message-text">HAPPY 19TH MONTHSARY MAHAL. SORRY HINDI TOTOONG FLOWER NGAYON PERO SOON TOTOO NA TO. WALA KONG IBANG GUSTONG SASABIHIN KUNDI MAHAL NA MAHAL KITA, MAS MINAHAL KITA KESA SA SARILI KO. MAGIINGAT IKAW PALAGI AH, NASA PALIGID MO LANG AKO KAPAG KAILANGAN MOKO NANJAN AGAD AKO PARA SAYO. PAG UMIBIG KA ULIT AYOKONG MAKIKITA KO KAYO DAHIL DIKO KAYA, MASASAKTAN AKO.</h1>
+          <p>I LOVE YOU SO MUCH!!!</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
